@@ -2,9 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Photo Gallery</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/baguetteBox.min.css">
 </head>
 
 <body>
+	<script type="text/javascript" src="js/baguetteBox.js" async></script>
+	<script  type="text/javascript" src="js/searchFilter.js"></script>
+	<div class="photo-gallery-container" id="photo-images"></div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+	baguetteBox.run('.photo-gallery-container');
+	</script>
 </body>
 </html>
