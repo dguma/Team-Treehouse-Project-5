@@ -1,6 +1,10 @@
 /* CSS Document */
+* {
+	box-sizing: border-box;
+}
+
 body {
-	margin: 1em 4em ;
+	margin: 0  1.5em 1.5em 1.5em;
 }
 
 img {
@@ -12,7 +16,16 @@ img {
 .photo-gallery-container {
 	display: grid;
 	grid-gap: 1.5em;
-	margin-top: 5em;
+	margin-top: 2em;
+}
+
+#search {
+	width: 70%;
+	height: 50px;
+	margin: 2em auto 0 auto;
+	display: block;
+	box-sizing: border-box;
+	text-indent: 10px;
 }
 
 @media screen and (min-width: 768px) {

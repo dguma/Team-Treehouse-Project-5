@@ -1,3 +1,5 @@
+window.addEventListener('load', function() { baguetteBox.run('.photo-gallery-container');const search = new Filter('search', 'data-caption');});
+
 var Hay = "I love hay bales. Took this snap on a drive through the countryside past some straw fields.";
 var Lake = "The lake was so calm today. We had a great view of the snow on the mountains from here.";
 var Canyon = "I hiked to the top of the mountain and got this picture of the canyon and trees below.";
@@ -17,4 +19,10 @@ var imagesAlt = new Array("Hay", "Lake", "Canyon", "Iceberg", "Desert", "Fall", 
 
 for (let i = 0; i <= 11; i++ ){
 		document.getElementById("photo-images").innerHTML += `<a href="images/${i}.jpg" data-caption="${images[i]}"><img src="images/thumbnails/${i}.jpg" alt="${imagesAlt[i]}"></a>`;
-	}
+}
+
+
+
+
+
+
