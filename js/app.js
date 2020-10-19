@@ -1,4 +1,9 @@
-window.addEventListener('load', function() { baguetteBox.run('.photo-gallery-container');const search = new Filter('search', 'data-caption');});
+window.addEventListener('load', function() { 
+	baguetteBox.run('.photo-gallery-container', {
+		buttons: true
+	});
+	const search = new Filter('search', 'data-caption');
+});
 
 var Hay = "I love hay bales. Took this snap on a drive through the countryside past some straw fields.";
 var Lake = "The lake was so calm today. We had a great view of the snow on the mountains from here.";

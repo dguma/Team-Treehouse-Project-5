@@ -5,27 +5,48 @@
 
 body {
 	margin: 0  1.5em 1.5em 1.5em;
+	background-color: rgba(255,248,245, 1);
 }
 
 img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	box-shadow: 0px 0px 15px 1px rgba(138, 134, 132, .5); 
+}
+
+img:hover {
+/*	transform: scale(1.05);*/
+	transition-duration: .125s;
+	transition-timing-function: ease-in;
+	box-shadow: none;
+	transform: perspective(700px) rotateX(3deg);
+	
 }
 
 .photo-gallery-container {
 	display: grid;
 	grid-gap: 1.5em;
 	margin-top: 2em;
+	width: 80%;
+	margin: 3em auto;
 }
 
 #search {
 	width: 70%;
-	height: 50px;
+	height: 60px;
 	margin: 2em auto 0 auto;
 	display: block;
 	box-sizing: border-box;
 	text-indent: 10px;
+	background-color: rgba(250, 243, 240, .98);
+}
+
+#search:hover {
+	box-shadow: 0px 0px 15px -3px rgba(196, 191, 188, 1) inset;
+	transition-property: box-shadow;
+	transition-duration: .25s;
+	transition-timing-function: ease-in;
 }
 
 @media screen and (min-width: 768px) {
